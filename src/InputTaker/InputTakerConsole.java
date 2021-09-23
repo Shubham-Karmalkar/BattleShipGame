@@ -210,4 +210,10 @@ public class InputTakerConsole implements InputOutputTaker {
 //        }
         return  length ;
     }
+
+    @Override
+    public String askTOPlayAgain() {
+        System.out.println("Want to Play Again ?  Y/N");
+        return scan.next();
+    }
 }

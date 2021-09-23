@@ -97,4 +97,13 @@ public class Jarvis {
     public int askForShipLength() {
         return inputTaker.askForShipLength();
     }
+
+    public boolean askToPlayAgain() {
+        String s = inputTaker.askTOPlayAgain();
+        if(s.equalsIgnoreCase("y")){
+            return true;
+        }else{
+            return false;
+        }
+    }
 }

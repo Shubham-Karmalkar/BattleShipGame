@@ -50,6 +50,12 @@ public class GameLoader {
         accuracy = (correctAttempt*100/attempt) ;
         System.out.println("Congratulation you Won");
         System.out.println("Your Accuracy is : "+accuracy+" %");
+        System.out.println();
+        if(jarvis.askToPlayAgain()){
+            startGame();
+        }else{
+            System.out.println("Game Over");
+        }
 
     }
 

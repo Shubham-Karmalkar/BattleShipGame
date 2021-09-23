@@ -27,4 +27,6 @@ public interface InputOutputTaker {
     Coordinates askForTarget();
 
     int askForShipLength();
+
+    String askTOPlayAgain();
 }
